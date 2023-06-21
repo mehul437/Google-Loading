@@ -1,0 +1,42 @@
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    animation: up-down 0.8s linear infinite alternate;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+    animation-delay: 0.2s;
+}
+
+.green{
+    background-color: green;
+    animation-delay: 0.4s;
+}
+
+.orange{
+    background-color: orange;
+    animation-delay: 0.6s;
+}
+
+@keyframes up-down{
+    from{
+        transform: translateY(-15px);
+    }
+    to{
+        transform: translateY(15px);
+    }
+}
